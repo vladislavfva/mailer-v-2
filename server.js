@@ -5,7 +5,7 @@ const fs = require('fs');
 const https = require('https');
 
 const app = express();
-const port = process.env.PORT || 7822;
+const port = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
