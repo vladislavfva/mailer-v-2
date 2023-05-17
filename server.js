@@ -20,7 +20,7 @@ app.post('/form-submit', (req, res) => {
 
 const options = {
   key: fs.readFileSync('/etc/letsencrypt/live/devvlad.com/privkey.pem'),
-  cert: fs.readFileSync('/path/to/certificate.crt'),
+  cert: fs.readFileSync('/etc/letsencrypt/live/devvlad.com/fullchain.pem'),
 };
 
 https.createServer(options, app).listen(port, () => {
