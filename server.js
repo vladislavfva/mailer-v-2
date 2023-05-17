@@ -19,7 +19,7 @@ app.post('/form-submit', (req, res) => {
 });
 
 const options = {
-  key: fs.readFileSync('/path/to/private.key'),
+  key: fs.readFileSync('/etc/letsencrypt/live/devvlad.com/privkey.pem'),
   cert: fs.readFileSync('/path/to/certificate.crt'),
 };
 
